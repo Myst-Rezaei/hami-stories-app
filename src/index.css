@@ -415,12 +415,12 @@ a {
 
 
 .call-logo,
-.phone-logo,
-.arrow-logo {
+.phone-logo {
   height: 14px;
   width: 14px;
   opacity: 0.5;
-  margin-right: 8px;
+  margin-right: 10px;
+  margin-left: 8px;
 }
 .spark-logo {
   height: 20px;
