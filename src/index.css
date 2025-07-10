@@ -1,3 +1,49 @@
+
+
+
+
+
+@font-face {
+  font-family: 'PeydaWeb';
+  src: url('../public/font/woff2/PeydaWeb-Medium.woff2') format('woff2'),
+  url('../public/font/woff/PeydaWeb-Medium.woff') format('woff'),
+  url('../public/font/eot/PeydaWeb-Medium.eot') format('embedded-opentype'),
+  url('../public/font/ttf/Peyda-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PeydaWeb';
+  src: url('../public/font/woff2/PeydaWeb-Bold.woff2') format('woff2'),
+  url('../public/font/woff/PeydaWeb-Bold.woff') format('woff'),
+  url('../public/font/eot/PeydaWeb-Bold.eot') format('embedded-opentype'),
+  url('../public/font/ttf/Peyda-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, .amp-header, .amp-paragraph, .text, .button-wrapper {
+  font-family: 'PeydaWeb', sans-serif;
+}
+
+.bottom-text, .bottom-button {
+  font-family: 'PeydaWeb', sans-serif;
+}
+
+
+
+
+
+
+body, .amp-header, .amp-paragraph, .text, .button-wrapper {
+
+  text-align: right;
+}
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +53,535 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/*slide1*/
+
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+
+.pos {
+  margin-top: 20px;
+  font-family: 'PeydaWeb', sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.bottom-text {
+  direction: rtl;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'PeydaWeb', sans-serif;
+  line-height: 1.2;
+}
+
+.bottom-button {
+  position: relative;
+  display: inline-block;
+  /*background-color: #F4BD33;*/
+  /*border-radius: 25px;*/
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  /*box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
+  }
+/* Target the specific layer using both class and template attribute for higher specificity */
+amp-story-grid-layer.text-layer[template="vertical"] {
+  /* This ensures the content is pushed to the bottom */
+  justify-content: flex-end !important;
+  /* Keep your padding from the style prop here as well */
+}
+
+amp-story-grid-layer.text-layer[template="vertical"] {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
+
+.arrow1 {
+  color: #F4BD33;
+  height: 30px;
+  width: 100px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 170px;
+  margin-top: -20px;
+  gap: 10px;
+  align-items: center;
+}
+
+
+/*slide2*/
+
+
+.bubble1 {
+  height: 150px;
+  width: 250px;
+
+
+}
+.speechbox {
+  position: relative;
+  height: 150px;
+  align-items: flex-end;
+}
+.textbubble {
+  font-family: 'PeydaWeb', sans-serif;
+  text-align: right;
+  font-size: 17px;
+  direction: rtl;
+  color: white;
+  font-weight: bold;
+  width: 250px;
+  padding: 10px;
+  position: absolute;
+  bottom: 40px;
+  right: 5px;
+
+
+}
+.q1 {
+  font-family: 'PeydaWeb', sans-serif;
+  margin-top: -60px;
+  margin-right: -70px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+}
+.arrow2 {
+  color: #F4BD33;
+  height: 25Px;
+  width: 90px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+        /*slide3*/
+
+.bottom-text3 {
+  direction: rtl;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightgoldenrodyellow;
+  color: #F4BD33;
+  padding: 10px;
+  border-radius: 15px;
+}
+.bottom-text3, p {
+  font-size: 20px;
+}
+.bottom-button3 {
+  font-family: 'PeydaWeb', sans-serif;
+  color: white;
+  font-size: 20px;
+  direction: rtl;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+
+}
+
+
+      /*slide4*/
+
+.speechbox2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.bubbleWithText {
+  position: relative;
+  width: 180px; /* match .bubble2 width */
+  height: 70px;  /* match .bubble2 height */
+}
+
+.bubble2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textbubble2 {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-family: 'PeydaWeb', sans-serif;
+  text-align: right;
+  font-size: 17px;
+  direction: rtl;
+  color: white;
+  font-weight: bold;
+  padding: 0 5px;
+  width: calc(100% - 20px);
+}
+
+
+.footerText {
+  position: absolute;
+  bottom: 30%;
+  right: 10px;
+  font-family: 'PeydaWeb', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+  direction: rtl;
+  text-align: right;
+  padding: 0 20px;
+  margin-top: auto;
+}
+
+
+                    /* slide 5*/
+
+
+.bubble5 {
+  position: relative;
+  height: 130px;
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.textbubble5 {
+  position: absolute;
+  top: 110%;
+  right: -10px;
+  transform: translateY(-50%);
+  font-family: 'PeydaWeb', sans-serif;
+  text-align: right;
+  font-size: 14px;
+  direction: rtl;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  width: calc(100%);
+
+}
+
+       /*slide6*/
+
+.bubbleWithText6 {
+  position: relative;
+  width: 180px; /* match .bubble2 width */
+  height: 70px;  /* match .bubble2 height */
+
+}
+
+.bubble6 {
+  margin-left: 130px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textbubble6 {
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  transform: translateY(-50%);
+  font-family: 'PeydaWeb', sans-serif;
+  text-align: right;
+  font-size: 18px;
+  direction: rtl;
+  color: white;
+  font-weight: bold;
+  padding: 0 5px;
+  width: calc(100% - 20px);
+}
+
+.bottom-text6 {
+  font-family: 'PeydaWeb', sans-serif;
+  direction: rtl;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: lightgoldenrodyellow;
+  margin-top: 70px;
+  width: 250px;
+  color: #F4BD33;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.footerText6 {
+  width: 200px;
+  position: absolute;
+  bottom: 18%;
+  right: 40px;
+  font-family: 'PeydaWeb', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px black;
+  direction: rtl;
+  text-align: right;
+  padding: 0 20px;
+  margin-top: auto;
+}
+
+
+     /*slide7*/
+
+.bubble7 {
+  position: relative;
+  width: 230px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.bottom-text7 {
+  position: absolute;
+  bottom: 14%;
+  right: 55px;
+  color: white;
+  direction: rtl;
+  text-align: right;
+  font-family: 'PeydaWeb', sans-serif;
+  font-size: 17px;
+  
+  font-weight: bold;
+}
+
+.arrow27 {
+  height: 20px;
+  width: 80px;
+  padding-right: 10px;
+}
+.bottom-button7{
+  font-family: 'PeydaWeb', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px black;
+}
+
+
+                 /*slide8*/
+
+@media (min-device-width: 320px) and (max-device-width: 768px) {
+  a {
+    color: #414040;
+    -webkit-appearance: none;
+  }
+  button {
+    color: #222020 !important;
+    -webkit-appearance: none;
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layoutbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #414040 !important;
+  -webkit-appearance: none;
+}
+
+
+
+
+
+.call-logo,
+.phone-logo,
+.arrow-logo {
+  height: 14px;
+  width: 14px;
+  opacity: 0.5;
+  margin-right: 8px;
+}
+.spark-logo {
+  height: 20px;
+  width: 21px;
+  opacity: 0.5;
+}
+.telegram-logo,
+.eitaa-logo {
+  height: 44px;
+  width: 44px;
+  margin-bottom: -7px;
+  margin-top: 10px;
+}
+#hami-logo {
+  height: 22px;
+  width: 22px;
+  border-radius: 44px;
+  opacity: 1;
+  margin-top: 10px;
+}
+.box1 {
+  font-family: 'PeydaWeb', sans-serif;
+  background-color: rgba(255, 251, 251, 0.9);
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+
+}
+#msg {
+  width: 80%;
+  padding: 5px;
+  font-size: 13px;
+  text-align: center;
+  direction: rtl;
+}
+
+
+.box2 {
+  font-family: 'PeydaWeb', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffbfb;
+  width: 330px;
+  height: 190px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.b2-r1 {
+  font-family: 'PeydaWeb', sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 14px;
+  align-items: center;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+.b2b {
+  font-family: 'PeydaWeb', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 33px;
+  width: 312px;
+  border-radius: 15px;
+  border: solid;
+  border-color: #d2d2d2;
+  background-color: #d2d2d2;
+  margin-block: 2px;
+}
+.no1, .no2, .no3, .no4 {
+  color: rgb(102, 102, 102);
+  margin-top: 5px;
+  font-size:15px;
+}
+
+.contact {
+  padding-right: 5px;
+  flex: 3;
+}
+
+.box3 {
+  font-family: 'PeydaWeb', sans-serif;
+  height: 93px;
+  width: 330px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#apps-title {
+  background-color: #fffbfb;
+  width: 129px;
+  height: 93px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#apps-title-text {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #131a46;
+}
+
+
+
+
+
+
+.content {
+  font-family: 'PeydaWeb', sans-serif;
+  text-align: right;
+  text-justify: inter-word;
+  direction: rtl;
+  font-size: 13px;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+.box5 {
+  width: 330px;
+  height: 44px;
+  background-color: rgba(255, 251, 251, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.linkbox {
+  background-color: #fffbfb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  font-size: 17px;
+  gap: 5px;
+  font-weight: bold;
 }
