@@ -202,7 +202,7 @@ function App() {
                           <AmpImg  src={hami} id="hami-logo" width="60" height="60" layout="fixed"
                                    alt="hamiteam logo"></AmpImg>
                             <span id="title">حامی،گروه تخصصی رزرو هتل</span>
-                            <span id="msg">برای رزرو هتل،کد هتلی که در کنال دیدید رو برای یکی از مشاورین ما بفرستید.
+                            <span id="msg">برای رزرو هتل،کد هتلی که در کانال دیدید رو برای یکی از مشاورین ما بفرستید.
                             <br/> فرم رزرو براتون ارسال میشه و با پرداخت بیعانه ی شب اول،رزرو صورت میگیره.</span>
                         </div>
 
