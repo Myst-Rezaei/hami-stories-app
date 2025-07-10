@@ -264,9 +264,9 @@ function App() {
 
                           <div id="apps-title">
                             <span id="apps-title-text">
-                             کانال ارتباطی <br/>
-                             حامـی_تیم در <br/>
-                              پیام رسان‌ ها
+                             برای ارتباط، بر روی <br/>
+                             دکمه های مورد<br/>
+                             نظر کلیک کنید
                             </span>
                           </div>
                        </div>
