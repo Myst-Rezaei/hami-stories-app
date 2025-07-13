@@ -21,6 +21,12 @@ import eitaa from './icons/Eitaa-Logo.svg'
 import call from './icons/call.svg'
 import spark from './icons/spark.svg'
 import hami from './icons/hamiteam.jpg'
+import m1 from './images/m1.jpg'
+import m2 from './images/m2.jpg'
+import m3 from './images/m3.jpg'
+import m4 from './images/m4.jpg'
+import m5 from './images/m5.jpg'
+
 
 
 function App() {
@@ -168,6 +174,62 @@ function App() {
         </AmpStoryPage>
 
 
+          <AmpStoryPage id="ninth">
+              <AmpStoryGridLayer template="fill">
+                  <AmpImg src={slide8} height="720" width="1280" layout="responsive" />
+              </AmpStoryGridLayer>
+
+              <AmpStoryGridLayer template="vertical" className="text-layer">
+
+                <div className="menu">
+                  <div className="custom-card">
+                    <img src={m1} alt="Lizard" className="custom-image" />
+                    <div className="custom-text">
+                      <h5 className="custom-title">
+                        از نفری 500هزار تومان
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="custom-card">
+                    <img src={m2} alt="Lizard" className="custom-image" />
+                    <div className="custom-text">
+                      <h5 className="custom-title">
+                        از نفری 700هزار تومان
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="custom-card">
+                    <img src={m3} alt="Lizard" className="custom-image" />
+                    <div className="custom-text">
+                      <h5 className="custom-title">
+                        از نفری 900هزار تومان
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="custom-card">
+                    <img src={m4} alt="Lizard" className="custom-image" />
+                    <div className="custom-text">
+                      <h5 className="custom-title">
+                        از نفری 1.600میلیون تومان
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="custom-card">
+                    <img src={m5} alt="Lizard" className="custom-image" />
+                    <div className="custom-text">
+                      <h5 className="custom-title">
+                        از نفری 4میلیون تومان
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </AmpStoryGridLayer>
+          </AmpStoryPage>
+
+
+
+
+
 
         <AmpStoryPage id="seventh">
           <AmpStoryGridLayer template="fill">
@@ -274,6 +336,9 @@ function App() {
             </div>
           </AmpStoryGridLayer>
         </AmpStoryPage>
+
+
+
       </AmpStory>
   );
 }

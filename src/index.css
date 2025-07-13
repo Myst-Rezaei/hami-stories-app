@@ -585,3 +585,63 @@ a {
   gap: 5px;
   font-weight: bold;
 }
+
+
+
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.story-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow: hidden;
+}
+
+.custom-image {
+  flex: 2;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.custom-text {
+
+  flex: 2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.custom-title {
+  font-family: 'PeydaWeb', sans-serif;
+  margin-top: 20%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.custom-description {
+  font-size: 10px;
+  color: #4b5563;
+}
